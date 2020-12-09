@@ -46,9 +46,12 @@ Optional, the tool can be invoked from the ant script
 
 4. Contact
 
-"SALIM CHEHIDA" <salim.chehida@univ-grenoble-alpes.fr>,
-"ABDELHAKIM BAOUYA" <abdelhakim.baouya@univ-grenoble-alpes.fr>,
+"SALIM CHEHIDA" <salim.chehida@univ-grenoble-alpes.fr>
+
+"ABDELHAKIM BAOUYA" <abdelhakim.baouya@univ-grenoble-alpes.fr>
+
 "MARIUS BOZGA" <Marius.Bozga@univ-grenoble-alpes.fr>
+
 "SADDEK BENSALEM" <saddek.bensalem@univ-grenoble-alpes.fr>
 
 
