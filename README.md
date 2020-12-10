@@ -1,6 +1,6 @@
 # Attack-Defence Exploration Tool
 
-**1. Description**
+## 1. Description
 
 This directory provides the implementation of the attack-defense exploration method published in the papers:
 
@@ -15,7 +15,7 @@ An extended technical report is available online at
   http://www-verimag.imag.fr/TR/TR-2018-4.pdf
 
 
-**2. Compilation Instructions**
+##2. Compilation Instructions
 
 - Java 11 is required to compile sources
 
@@ -29,7 +29,7 @@ Place the jar file into the attack-defense/lib directory.
     $ ant jar
 
 
-**3. Benchmarks**
+##3. Benchmarks
 
 Several benchmarks are included in the examples directory.
 Every benchmark can be run by calling
@@ -44,7 +44,7 @@ Optional, the tool can be invoked from the ant script
    $ ant run -Dadtfile=examples/<benchmark>.adt
    
 
-**4. Contact**
+##4. Contact
 
 "SALIM CHEHIDA" salim.chehida@univ-grenoble-alpes.fr
 
