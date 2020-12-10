@@ -4,7 +4,7 @@
 
 This directory provides the implementation of the attack-defense exploration method published in the papers:
 
-A- Salim Chehida, Abdelhakim Baouya, Marius Bozga and Saddek Bensalem, "Exploration of Impactful Countermeasures on IoT Attacks", 2020 9th Mediterranean Conference on Embedded Computing (MECO), Budva, Montenegro, 2020, pp. 1-4, doi:10.1109/MECO49872.2020.9134200.
+A- Salim Chehida, Abdelhakim Baouya, Marius Bozga and Saddek Bensalem, "Exploration of Impactful Countermeasures on IoT Attacks", 2020 9th Mediterranean Conference on Embedded Computing (MECO), Budva, Montenegro, 2020, pp. 1-4, https://ieeexplore.ieee.org/abstract/document/9134200.
 
 B- Braham Lotfi Mediouni, Ayoub Nouri, Marius Bozga, Axel Legay, Saddek Bensalem, "Mitigating Security Risks Through Attack Strategies Exploration", Leveraging Applications of Formal Methods, Verification and Validation - 8th International Symposium, ISoLA 2018 Proceedings Part II, LNCS 11245:392-413.
 
