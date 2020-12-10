@@ -4,7 +4,7 @@
 
 This directory provides the implementation of the attack-defense exploration method published in the papers:
 
-A- Salim Chehida, Abdelhakim Baouya, Marius Bozga and Saddek Bensalem, "Exploration of Impactful Countermeasures on IoT Attacks", 2020 9th Mediterranean Conference on Embedded Computing (MECO), Budva, Montenegro, 2020, pp. 1-4, doi: 10.1109/MECO49872.2020.9134200.
+A- Salim Chehida, Abdelhakim Baouya, Marius Bozga and Saddek Bensalem, "Exploration of Impactful Countermeasures on IoT Attacks", 2020 9th Mediterranean Conference on Embedded Computing (MECO), Budva, Montenegro, 2020, pp. 1-4, doi: 10.1109/MECO49872.2020.9134200.
 
 B- Braham Lotfi Mediouni, Ayoub Nouri, Marius Bozga, Axel Legay, Saddek Bensalem, "Mitigating Security Risks Through Attack Strategies Exploration", Leveraging Applications of Formal Methods, Verification and Validation - 8th International Symposium, ISoLA 2018 Proceedings Part II, LNCS 11245:392-413.
 
@@ -15,7 +15,7 @@ An extended technical report is available online at
   http://www-verimag.imag.fr/TR/TR-2018-4.pdf
 
 
-2. Compilation Instructions
+**2. Compilation Instructions**
 
 - Java 11 is required to compile sources
 
@@ -29,7 +29,7 @@ Place the jar file into the attack-defense/lib directory.
     $ ant jar
 
 
-3. Benchmarks
+**3. Benchmarks**
 
 Several benchmarks are included in the examples directory.
 Every benchmark can be run by calling
@@ -44,14 +44,15 @@ Optional, the tool can be invoked from the ant script
    $ ant run -Dadtfile=examples/<benchmark>.adt
    
 
-4. Contact
+**4. Contact**
 
-"SALIM CHEHIDA" <salim.chehida@univ-grenoble-alpes.fr>
+"SALIM CHEHIDA" salim.chehida@univ-grenoble-alpes.fr
 
-"ABDELHAKIM BAOUYA" <abdelhakim.baouya@univ-grenoble-alpes.fr>
+"ABDELHAKIM BAOUYA" abdelhakim.baouya@univ-grenoble-alpes.fr
 
-"MARIUS BOZGA" <Marius.Bozga@univ-grenoble-alpes.fr>
+"MARIUS BOZGA" Marius.Bozga@univ-grenoble-alpes.fr
 
-"SADDEK BENSALEM" <saddek.bensalem@univ-grenoble-alpes.fr>
+"SADDEK BENSALEM" saddek.bensalem@univ-grenoble-alpes.fr
+
 
 
