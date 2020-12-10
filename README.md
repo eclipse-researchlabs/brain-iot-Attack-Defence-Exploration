@@ -1,6 +1,6 @@
 # Attack-Defence Exploration Tool
 
-1. Description
+**1. Description**
 
 This directory provides the implementation of the attack-defense exploration method published in the papers:
 
