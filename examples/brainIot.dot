@@ -1,0 +1,47 @@
+digraph attack_defense_tree {
+F0 [shape=circle, label=OR, color=black]
+F1 [shape=circle, label=AND, color=black]
+F2 [shape=circle, label=OR, color=black]
+F3 [shape=rectangle, label=DoS, color=red]
+F2 -> F3
+F4 [shape=rectangle, label=UnA, color=red]
+F2 -> F4
+F5 [shape=rectangle, label=SyA, color=red]
+F2 -> F5
+F6 [shape=rectangle, label=WoA, color=red]
+F2 -> F6
+F7 [shape=rectangle, label=SiA, color=red]
+F2 -> F7
+F8 [shape=rectangle, label=SFA, color=red]
+F2 -> F8
+F1 -> F2
+F9 [shape=circle, label=NOT, color=black]
+F10 [shape=parallelogram, label=Auth, color=blue]
+F9 -> F10
+F1 -> F9
+F0 -> F1
+F11 [shape=circle, label=AND, color=black]
+F12 [shape=circle, label=OR, color=black]
+F13 [shape=rectangle, label=TAA, color=red]
+F12 -> F13
+F14 [shape=rectangle, label=MMA, color=red]
+F12 -> F14
+F11 -> F12
+F15 [shape=circle, label=NOT, color=black]
+F16 [shape=circle, label=AND, color=black]
+F17 [shape=parallelogram, label=Auth, color=blue]
+F16 -> F17
+F18 [shape=parallelogram, label=Encry, color=blue]
+F16 -> F18
+F15 -> F16
+F11 -> F15
+F0 -> F11
+F19 [shape=circle, label=AND, color=black]
+F20 [shape=rectangle, label=SpA, color=red]
+F19 -> F20
+F21 [shape=circle, label=NOT, color=black]
+F22 [shape=parallelogram, label=TPM, color=blue]
+F21 -> F22
+F19 -> F21
+F0 -> F19
+}

@@ -1,0 +1,47 @@
+digraph attack_defense_tree {
+F0 [shape=circle, label=OR, color=black]
+F1 [shape=circle, label=AND, color=black]
+F2 [shape=circle, label=NOT, color=black]
+F3 [shape=parallelogram, label=t2, color=blue]
+F2 -> F3
+F1 -> F2
+F4 [shape=circle, label=OR, color=black]
+F5 [shape=rectangle, label=st, color=red]
+F4 -> F5
+F6 [shape=circle, label=AND, color=black]
+F7 [shape=rectangle, label=ot, color=red]
+F6 -> F7
+F8 [shape=circle, label=OR, color=black]
+F9 [shape=rectangle, label=ba, color=red]
+F8 -> F9
+F10 [shape=circle, label=NOT, color=black]
+F11 [shape=parallelogram, label=at, color=green]
+F10 -> F11
+F8 -> F10
+F6 -> F8
+F12 [shape=rectangle, label=im, color=red]
+F6 -> F12
+F4 -> F6
+F1 -> F4
+F0 -> F1
+F13 [shape=rectangle, label=b, color=red]
+F0 -> F13
+F14 [shape=rectangle, label=t, color=red]
+F0 -> F14
+F15 [shape=circle, label=AND, color=black]
+F16 [shape=rectangle, label=bs, color=red]
+F15 -> F16
+F17 [shape=circle, label=OR, color=black]
+F18 [shape=circle, label=NOT, color=black]
+F19 [shape=parallelogram, label=t1, color=blue]
+F18 -> F19
+F17 -> F18
+F20 [shape=circle, label=NOT, color=black]
+F21 [shape=parallelogram, label=tf, color=blue]
+F20 -> F21
+F17 -> F20
+F15 -> F17
+F22 [shape=rectangle, label=is, color=red]
+F15 -> F22
+F0 -> F15
+}

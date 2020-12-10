@@ -1,0 +1,91 @@
+digraph attack_defense_tree {
+F0 [shape=circle, label=OR, color=black]
+F1 [shape=circle, label=AND, color=black]
+F2 [shape=circle, label=OR, color=black]
+F3 [shape=rectangle, label=DoS, color=red]
+F2 -> F3
+F4 [shape=circle, label=AND, color=black]
+F5 [shape=rectangle, label=DDoS, color=red]
+F4 -> F5
+F6 [shape=circle, label=NOT, color=black]
+F7 [shape=parallelogram, label=SD_IoT, color=green]
+F6 -> F7
+F4 -> F6
+F2 -> F4
+F1 -> F2
+F8 [shape=circle, label=NOT, color=black]
+F9 [shape=parallelogram, label=DDoS_MT, color=blue]
+F8 -> F9
+F1 -> F8
+F0 -> F1
+F10 [shape=circle, label=AND, color=black]
+F11 [shape=rectangle, label=SCA, color=red]
+F10 -> F11
+F12 [shape=circle, label=NOT, color=black]
+F13 [shape=parallelogram, label=LEA_M, color=blue]
+F12 -> F13
+F10 -> F12
+F0 -> F10
+F14 [shape=circle, label=AND, color=black]
+F15 [shape=rectangle, label=MMA, color=red]
+F14 -> F15
+F16 [shape=circle, label=NOT, color=black]
+F17 [shape=parallelogram, label=SMQTT, color=blue]
+F16 -> F17
+F14 -> F16
+F0 -> F14
+F18 [shape=circle, label=AND, color=black]
+F19 [shape=rectangle, label=SyA, color=red]
+F18 -> F19
+F20 [shape=circle, label=NOT, color=black]
+F21 [shape=parallelogram, label=SecTrust, color=blue]
+F20 -> F21
+F18 -> F20
+F0 -> F18
+F22 [shape=circle, label=AND, color=black]
+F23 [shape=rectangle, label=WoA, color=red]
+F22 -> F23
+F24 [shape=circle, label=NOT, color=black]
+F25 [shape=parallelogram, label=C_IDS, color=blue]
+F24 -> F25
+F22 -> F24
+F0 -> F22
+F26 [shape=circle, label=AND, color=black]
+F27 [shape=circle, label=OR, color=black]
+F28 [shape=rectangle, label=SFA, color=red]
+F27 -> F28
+F29 [shape=circle, label=AND, color=black]
+F30 [shape=rectangle, label=SiA, color=red]
+F29 -> F30
+F31 [shape=circle, label=NOT, color=black]
+F32 [shape=parallelogram, label=INTI, color=green]
+F31 -> F32
+F29 -> F31
+F27 -> F29
+F26 -> F27
+F33 [shape=circle, label=NOT, color=black]
+F34 [shape=parallelogram, label=SRPL, color=blue]
+F33 -> F34
+F26 -> F33
+F0 -> F26
+F35 [shape=circle, label=AND, color=black]
+F36 [shape=circle, label=OR, color=black]
+F37 [shape=rectangle, label=SpA, color=red]
+F36 -> F37
+F38 [shape=rectangle, label=UnA, color=red]
+F36 -> F38
+F35 -> F36
+F39 [shape=circle, label=NOT, color=black]
+F40 [shape=parallelogram, label=SRAM_PUF, color=blue]
+F39 -> F40
+F35 -> F39
+F0 -> F35
+F41 [shape=circle, label=AND, color=black]
+F42 [shape=rectangle, label=TAA, color=red]
+F41 -> F42
+F43 [shape=circle, label=NOT, color=black]
+F44 [shape=parallelogram, label=EPIC, color=blue]
+F43 -> F44
+F41 -> F43
+F0 -> F41
+}

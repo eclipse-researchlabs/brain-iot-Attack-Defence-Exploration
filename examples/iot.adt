@@ -1,0 +1,52 @@
+
+# attacks
+attack SFA 16250 [0,20] 0.65
+attack SiA 16250 [0,20] 0.65
+attack WoA 16250 [0,20] 0.65
+attack SyA 16250 [0,20] 0.65
+attack TAA 15000 [0,20] 0.75
+attack MMA 12500 [0,20] 0.75
+attack DoS 15000 [0,20] 0.75
+attack SpA 13000 [0,20] 0.65
+attack UnA 16250 [0,20] 0.65
+attack DDoS 15000 [0,20] 0.75
+attack SCA 10500 [0,20] 0.35
+
+
+
+# defenses
+defense EPIC false
+defense SRAM_PUF false
+defense SRPL false
+defense INTI false
+defense C_IDS false
+defense SecTrust false
+defense SMQTT false
+defense DDoS_MT false
+defense SD_IoT false
+defense LEA_M false
+
+
+# attack-defense tree
+
+tree 
+( ( TAA  &&  (!EPIC)) 
+|| ( (SpA || UnA)  &&  (!SRAM_PUF))
+|| ( (SFA || ( SiA  &&  (!INTI)))  &&  (!SRPL))
+|| ( WoA  &&  (!C_IDS))
+|| ( SyA  &&  (!SecTrust)) 
+|| ( MMA  &&  (!SMQTT)) 
+|| ( (DoS || ( DDoS  &&  (!SD_IoT)))  &&  (!DDoS_MT))
+|| ( SCA  &&  (!LEA_M)) 
+) 
+
+
+end
+
+# max values
+
+# max cost 50000
+# max time 300
+
+max cost 70000
+max time 100
